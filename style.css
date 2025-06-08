@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=cyrillic');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: #233746;
+}
+
+/* Box model */
+.container {
+  max-width: 800px; /* 100%; */
+  margin: auto;
+  padding-top: 30px;  
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* максимальная ширина до 700 px */
+@media(max-width: 700px) {
+  .info {
+      text-align: center;
+      display: block;
+  }
+}
+
+.avatar {
+  width: 300px;
+  border-radius: 28px;  
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); 
+}
+
+.info-text {
+  margin-left: 20px;
+}
+
+.info-text h3 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-weight: 400;
+  color: #233746;
+  margin: 0; 
+  line-height: 1.5; 
+  margin-bottom: 4px;
+}
+
+.content h3 {
+  margin-top: 40px;
+}
+
+.content p {
+  font-weight: 400;
+  color: #233746;
+  margin: 0; 
+  line-height: 1.4;
+  /* margin-bottom: 2px;  */
+}
+
+.block-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.img-element {	
+  box-sizing: border-box;
+  margin: 8px auto;
+}
+
+.img-element img {
+  display: block;
+	width: 100%;
+  border-radius: 16px;  
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);  
+}
+
+.img-2 {
+  flex-basis: 48%;
+}
+
+.img-3 {
+  flex-basis: 32%;
+}
+
+/* максимальная ширина до 700 px */
+@media screen and (max-width: 700px) {
+
+  body {
+    font-size: 13px;
+  }
+
+  .content {
+    text-align: center;
+    display: block;
+  }
+
+  .img-2 {
+    flex-basis: 48%;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .img-2 {
+    flex-basis: 100%;
+  }
+
+  .img-3 {
+    flex-basis: 100%;
+  }
+
+}
