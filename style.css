@@ -58,7 +58,7 @@ body {
   color: #233746;
   margin: 0; 
   line-height: 1.4;
-  /* margin-bottom: 2px;  */
+  margin: 4px 0 4px 0;
 }
 
 .block-img {
@@ -92,11 +92,11 @@ body {
 @media screen and (max-width: 700px) {
 
   body {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .content {
-    text-align: center;
+    text-align: justify;
     display: block;
   }
 
